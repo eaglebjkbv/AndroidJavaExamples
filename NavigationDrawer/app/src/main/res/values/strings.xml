@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NavigationDrawer</string>
+    <string name="android">Android</string>
+    <string name="apps">Uygulamalar</string>
+    <string name="attachement">Eklentiler</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>
