@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonFragAAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag A Aç">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonFragAKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag A Kapat">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonFragBAc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag B Aç">
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonFragBKapat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frag B Kapat">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butonReplaceA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace With A" />
+
+        <Button
+            android:id="@+id/butonReplaceB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Replace with B" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butonShowA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Göster" />
+
+        <Button
+            android:id="@+id/butonHideA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Gizle" />
+        <Button
+            android:id="@+id/butonShowB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B Göster" />
+
+        <Button
+            android:id="@+id/butonHideB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B Gizle" />
+    </LinearLayout>
+
+<FrameLayout
+android:id="@+id/fragment_container"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+</FrameLayout>
+
+
+    </LinearLayout>
