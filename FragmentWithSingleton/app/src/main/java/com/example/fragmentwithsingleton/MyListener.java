@@ -1,5 +1,5 @@
 package com.example.fragmentwithsingleton;
 
 public interface MyListener {
-    public void myListener(String which);
+    public void myListener();
 }

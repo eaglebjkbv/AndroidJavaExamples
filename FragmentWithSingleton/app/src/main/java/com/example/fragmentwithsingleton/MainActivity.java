@@ -34,18 +34,18 @@ public class MainActivity extends AppCompatActivity implements MyListener {
     }
 
     @Override
-    public void myListener(String which) {
+    public void myListener() {
         Log.d("Mesaj","My listener Çalıştı");
         FragmentTransaction ft=manager.beginTransaction();
         FragmentA fragmentA= (FragmentA) manager.findFragmentByTag("fragA");
         FragmentB fragmentB=(FragmentB) manager.findFragmentByTag("fragB");
-        if(which=="fragA") {
+
             ft.detach(fragmentA);
             ft.attach(fragmentA);
-        }else {
+
             ft.detach(fragmentB);
             ft.attach(fragmentB);
-        }
+
         ft.commit();
 
     }

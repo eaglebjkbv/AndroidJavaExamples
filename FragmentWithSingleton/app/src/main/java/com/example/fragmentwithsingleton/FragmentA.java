@@ -1,5 +1,6 @@
 package com.example.fragmentwithsingleton;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,14 +29,14 @@ public class FragmentA extends Fragment {
         textViewid.setText(id);
         editTextIsim=view.findViewById(R.id.edittextIsim);
         editTextIsim.setText(dataSingleton.getIsim());
-        Log.d("Mesaj","Fragment A Dan");
+        Log.d("Mesaj","Fragment A onCreateView");
         Button buttonTikla=view.findViewById(R.id.buttonTikla);
         buttonTikla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dataSingleton.setIsim(editTextIsim.getText().toString());
                 MyListener myListener= (MyListener) getActivity();
-                myListener.myListener("fragB");
+                myListener.myListener();
             }
         });
 
@@ -45,6 +46,12 @@ public class FragmentA extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        editTextIsim.setText(dataSingleton.getIsim());
+        //editTextIsim.setText(dataSingleton.getIsim());
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        Log.d("Mesaj","Fragmanet A Attached");
     }
 }
